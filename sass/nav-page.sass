@@ -1,0 +1,341 @@
+#nav-page
+    &__snow
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 11
+        position: absolute
+        pointer-events: none
+        .snow
+            width: 10px
+            height: 10px
+            border-radius: 100%
+            pointer-events: none
+            position: absolute
+            background: rgba(255,255,255,0.8)
+.nav-page
+    width: 100%
+    overflow: hidden
+    display: flex
+    align-items: flex-end
+    position: relative
+    z-index: 2
+    background: linear-gradient(180deg, #0B63E9 50%, #fff 55%)
+    &__bg
+        z-index: -5
+        display: block
+        width: 100%
+        pointer-events: none
+    &__items
+        position: relative
+        img
+            transition: all 0.4s ease
+        a
+            display: block
+            position: absolute
+            z-index: 10
+            &:hover
+                & + img
+                    // filter: brightness(120%)
+                    & + b,
+                    & + svg
+                        fill: red
+                        color: red
+    &__item 
+        position: absolute
+        display: block
+        b,
+        svg
+            display: block
+            text-align: center
+            text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5)
+            position: absolute
+            color: #ffffff
+            font-size: 1vw
+            transition: all 0.4s ease
+    &__news
+        top: 5.35vw
+        left: 15vw
+        img
+            width: 23.2vw
+            position: relative
+            z-index: 3
+        b,
+        svg
+            top: 9.2vw
+            left: 8.5vw
+            width: 6vw
+            height: 6vw
+            z-index: 4
+            shape-outside: circle(50%)
+            textPath
+                font-family: Roboto,Helvetica,sans-serif
+                font-weight: bold
+        a
+            position: absolute
+            width: 22vw
+            height: 22vw
+            left: 1vw
+            top: 1vw
+            border-radius: 100%
+    &__media
+        top: 7.6vw
+        left: 32.5vw
+        img
+            width: 23vw
+            position: relative
+            z-index: 1
+        a
+            position: absolute
+            width: 9.2vw
+            height: 20.7vw
+            right: 2.5vw
+            top: 3.8vw
+        b
+            font-size: 2.4vw
+            right: 2.5vw
+            top: 3vw
+            letter-spacing: 0.07em
+            z-index: 2
+        video
+            width: 10.3vw
+            height: 6.3vw
+            position: absolute
+            right: 1.92vw
+            top: 7.85vw
+            z-index: 4
+            display: block
+    &__railway
+        bottom: -2.67vw
+        left: 0
+        img
+            width: 37.6vw
+            position: relative
+            z-index: 6
+        b
+            font-size: 1.1vw
+            font-weight: 500
+            top: 6vw
+            right: 16.5vw
+            z-index: 7
+            letter-spacing: 0.07em
+        a
+            position: absolute
+            width: 20.2vw
+            height: 8.7vw
+            right: 8.5vw
+            top: 2.8vw
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                top: -2.5vw
+                right: 0
+                height: 2.5vw
+                width: 6.5vw
+                border-radius: 100% 0 0 0
+    &__movie
+        bottom: 7.2vw
+        left: -0.5vw
+        img
+            position: relative
+            z-index: 4
+            width: 29.4vw
+        b
+            font-size: 1.85vw
+            bottom: 9.4vw
+            right: 14.4vw
+            z-index: 5
+            font-weight: 900
+            letter-spacing: 0.11em
+            transform: rotate(7deg)
+                
+        a
+            position: absolute
+            width: 17vw
+            height: 6vw
+            right: 5vw
+            bottom: 4vw
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                top: -4.5vw
+                left: 0
+                height: 4.5vw
+                width: 11vw
+                border-radius: 0 100% 0 0
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                bottom: 0
+                right: -2vw
+                height: 5vw
+                width: 2vw
+                border-radius: 100% 0 0 0
+    &__love
+        bottom: 13.5vw
+        left: 60.9vw
+        img
+            width: 7.5vw
+        b
+            z-index: 1
+            left: 2vw
+            bottom: 6vw
+            font-size: .71vw
+            text-transform: uppercase
+            line-height: 1.3
+            text-align: left
+            font-weight: 500
+            letter-spacing: 0.08em
+        a
+            position: absolute
+            width: 6.5vw
+            height: 14.2vw
+            right: 0.5vw
+            bottom: 0.8vw
+    &__stars
+        bottom: 12.4vw
+        left: 64.2vw
+        b
+            z-index: 1
+            left: 5vw
+            top: 8.4vw
+            font-size: 1.1vw
+            text-transform: uppercase
+            line-height: 1.3
+            font-weight: 500
+            letter-spacing: 0.08em
+            text-shadow: none
+        img
+            width: 21.2vw
+        a
+            position: absolute
+            width: 6.5vw
+            height: 17.8vw
+            left: 3.77vw
+            bottom: 0.8vw
+    &__logo
+        bottom: 21vw
+        right: 5.8vw
+        img
+            width: 11.39vw
+        a
+            position: absolute
+            width: 10.5vw
+            height: 5vw
+            right: 0.5vw
+            top: 0
+    &__dk
+        bottom: 7vw
+        right: 8vw
+        b
+            z-index: 3
+            left: 5.5vw
+            top: 1.6vw
+            font-size: 1.45vw
+            text-transform: uppercase
+            line-height: 1.3
+            letter-spacing: 0.10em
+            text-shadow: none
+        img
+            position: relative
+            z-index: 2
+            width: 22.625vw
+        a
+            position: absolute
+            width: 15vw
+            height: 10vw
+            right: 3.5vw
+            top: 1vw
+            &::after
+                content: ''
+                display: block
+                width: 2.5vw
+                position: absolute
+                right: -2.5vw
+                top: 0
+                height: 4vw
+            &::after
+                content: ''
+                display: block
+                width: 2.1vw
+                position: absolute
+                left: -2vw
+                top: 3.8vw
+                height: 6.35vw
+    &__on-img
+        left: 22vw
+        bottom: 6.2vw
+        pointer-events: none
+        img
+            position: relative
+            z-index: 1
+            width: 90.448vw
+    &__on-img2
+        right: -3vw
+        bottom: 5vw
+        pointer-events: none
+        img
+            position: relative
+            z-index: 2
+            width: 31.51vw
+    &__locomotive
+        position: absolute
+        bottom: 0.81vw
+        left: -103vw
+        animation: locomotive2 16s infinite ease-in-out
+        pointer-events: none
+        img
+            width: 66.684vw
+            max-width: 3000px
+            position: relative
+            pointer-events: none
+            z-index: 4
+        &-ny
+            bottom: 0.21vw
+            left: -58vw
+            img
+                width: 117.511vw
+    &__locomotive-shadow
+        position: absolute
+        bottom: 0.3vw
+        pointer-events: none
+        left: 13.5vw
+        img
+            width: 22.211vw
+    &__snowman
+        bottom: 6vw
+        right: 3vw
+        z-index: 3
+        pointer-events: none
+        img
+            width: 16.891vw
+
+    @keyframes locomotive 
+        from 
+            left: -70vw
+        30% 
+            left: -7vw
+        45% 
+            left: -7vw
+        to 
+            left: 103vw
+
+
+    @keyframes locomotive2
+        from 
+            left: -120vw
+        30% 
+            left: -58vw
+        43% 
+            left: -58vw
+        97% 
+            left: 111vw
+        to 
+            left: 111vw
+
+
