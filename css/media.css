@@ -20,8 +20,7 @@
     width: 335px; }
 
   .station__map {
-    width: calc( 100% - 335px );
-    padding-right: 7%; }
+    width: calc( 100% - 335px ); }
     .station__map-btn {
       left: auto;
       right: 10%; }
@@ -415,7 +414,8 @@
         margin-bottom: 40px; }
     .station__map {
       width: 100%;
-      padding-bottom: 350px; }
+      padding-top: 45px;
+      padding-bottom: 50px; }
 
   .media-page .header .wrapper {
     -webkit-box-pack: center;
@@ -685,7 +685,10 @@
       width: 20px;
       height: 20px; }
       .popup__login .close-modal img {
-        width: 100%; } }
+        width: 100%; }
+
+  .station__map-stars a:nth-child(7) {
+    top: 27%; } }
 @media screen and (max-width: 455px) {
   .station__map-heading {
     padding: 0 5%;
@@ -949,7 +952,7 @@
     padding: 20vw 5% 60vw; }
 
   .station__map-heading {
-    font-size: 24px; }
+    font-size: 22px; }
 
   .popup__login {
     width: 100%; }
