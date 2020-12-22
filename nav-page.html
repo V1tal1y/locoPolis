@@ -29,10 +29,36 @@
     <link rel="apple-touch-icon" href="img/favicons/256x256.png" sizes="256x256">
     <link rel="apple-touch-icon" href="img/favicons/512x512.png" sizes="512x512">
     <script defer="" src="js/libs.min.js"></script>
+    <script defer="" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/nav-page.css">
   </head>
   <body>
     <div class="page-wrapper">
+      <header class="header header-main container">
+        <div class="header__wrapper wrapper"><img class="header__logo" src="img/logo-w.svg" alt=""/>
+          
+          <div class="header__user">
+            <div class="header__all-counter">
+              156347
+              <span>Рейтинг ЛокоПолиса</span>
+            </div>
+            <p class="header__user-counter">30 <span>Ваш рейтинг</span></p>
+            <div class="header__user-avatar" style="background-image: url('img/inhtml/avatar.jpg');">
+              <div class="header__user-nav">
+                <ul class="header__user-nav-list">
+                  <li><a href="#">Личный кабинет</a></li>
+                  <li><a href="#">Настройки</a></li>
+                  <li><a href="#">Выйти</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__user-burger"></div>
+          </div>
+        </div>
+      </header>
+
       <div class="nav-page">
         <div id="nav-page__snow"></div>
         <div class="nav-page__items">
@@ -65,7 +91,7 @@
             <b>ПАРАД <br> ЗВЕЗД</b>
           </div>
           <div class="nav-page__item nav-page__logo">
-            <a href="#"></a><img src="img/page-nav/logo.png" alt="">
+            <a href="#"><img src="img/page-nav/baner.jpg" alt=""></a><img src="img/page-nav/logo.png" alt="">
           </div>
           <div class="nav-page__item nav-page__dk">
             <a href="#"></a><img src="img/page-nav/dk.png" alt="">
@@ -101,6 +127,27 @@
         </div>
       </div>
 
+      <div class="nav-page-bans">
+        <div class="wrapper">
+          <a href="#">
+            <span class="img"><img src="img/page-nav/ban1.svg" alt=""></span>
+            <b>Шанс есть!</b>
+            лотереи
+          </a>
+          <a href="#">
+            <span class="img"><img src="img/page-nav/ban2.svg" alt=""></span>
+            <b>парад звезд <br> конкурсы</b>
+            прояви себя
+          </a>
+          <a href="#">
+            <span class="img"><img src="img/page-nav/ban3.svg" alt=""></span>
+            <b>Онлайн лекции <br> Синхронизация</b>
+          </a>
+          <a href="#">
+            <!-- <span class="img"><img src="img/page-nav/ban1.svg" alt=""></span> -->
+          </a>
+        </div>
+      </div>
         
       <footer class="footer container footer--train">
         <div class="footer__wrapper wrapper">
@@ -124,6 +171,21 @@
       </footer>
     </div>
     
+    <nav class="nav__page">
+      <div class="nav__page-close"><img src="img/close-btn.svg" alt=""></div>
+      <ul class="nav__page-list">
+        <li class="nav__page-item"><a href="#">ОТЛИЧНЫЕ НОВОСТИ</a></li>
+        <li class="nav__page-item"><a href="#">ЗДЕСЬ ЖИВЕТ ЛЮБОВЬ</a></li>
+        <li class="nav__page-item"><a href="#">ЗДЕСЬ ЖИВЕТ ТВОРЧЕСТВО</a></li>
+        <li class="nav__page-item"><a href="#">ЛОКОПОЛИС МЕДИА</a></li>
+        <li class="nav__page-item"><a href="#">ПУТЕШЕСТВИЕ</a></li>
+        <li class="nav__page-item"><a href="#">КИНОТЕАТР</a></li>
+      </ul>
+      <div class="nav__page-bot">
+        <a class="nav__page-bot-link" href="#">Личный кабинет</a>
+        <a class="nav__page-bot-link" href="#">Настройки</a>
+      </div>
+    </nav>
 
     <div class="popup js-popup js-close-popup" data-popup="news">
       <div class="popup__backdrop"></div>

@@ -270,6 +270,30 @@
         &-likes
             padding-bottom: 15px
 
+    .header-main
+        position: relative
+        top: auto
+        left: auto
+        .header
+            &__wrapper
+                flex-direction: column
+                justify-content: center
+                align-items: center
+            &__all-counter,
+            &__user-counter 
+                span
+                    color: #000000
+    .nav-page-bans
+        padding-bottom: 5px
+        .wrapper
+            flex-wrap: wrap
+        a
+            width: calc( 50% - 5px )
+            margin-bottom: 10px
+    
+
+
+
 @media screen and (max-width: 800px )
     .login
         &__buttons
@@ -843,9 +867,20 @@
             padding: 20px
         &-add
             padding: 20px 20px 30px
+    .nav__page
+        max-width: 100%
+        &-list 
+            li
+                margin-bottom: 15px
 
 
-
+    .nav-page-bans
+        .wrapper
+            display: block
+        a
+            width: 100%
+            height: auto
+            padding: 20px 15px 25px
 
 @media screen and (max-width: 370px )
     .personal__form
@@ -926,3 +961,10 @@
         &-slider
             width: 290px
             height: 290px
+
+    .header__all-counter
+        font-size: 26px
+        padding-left: 45px
+        &::before
+            width: 45px
+            height: 45px

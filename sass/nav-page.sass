@@ -221,14 +221,20 @@
     &__logo
         bottom: 21vw
         right: 5.8vw
-        img
+        & > img
             width: 11.39vw
         a
             position: absolute
-            width: 10.5vw
+            width: 10.52vw
             height: 5vw
             right: 0.5vw
             top: 0
+            &:hover
+                img
+                    filter: brightness(105%)
+            img
+                display: block
+                width: 100%
     &__dk
         bottom: 7vw
         right: 8vw
@@ -315,27 +321,43 @@
         img
             width: 16.891vw
 
-    @keyframes locomotive 
-        from 
-            left: -70vw
-        30% 
-            left: -7vw
-        45% 
-            left: -7vw
-        to 
-            left: 103vw
+@keyframes locomotive 
+    from 
+        left: -70vw
+    30% 
+        left: -7vw
+    45% 
+        left: -7vw
+    to 
+        left: 103vw
 
 
-    @keyframes locomotive2
-        from 
-            left: -120vw
-        30% 
-            left: -58vw
-        43% 
-            left: -58vw
-        97% 
-            left: 111vw
-        to 
-            left: 111vw
+@keyframes locomotive2
+    from 
+        left: -120vw
+    30% 
+        left: -58vw
+    43% 
+        left: -58vw
+    97% 
+        left: 111vw
+    to 
+        left: 111vw
 
 
+
+
+
+@media screen and (max-width: 800px )
+    #nav-page
+        &__snow
+            .snow
+                width: 6px
+                height: 6px
+
+@media screen and (max-width: 600px )
+    #nav-page
+        &__snow
+            .snow
+                width: 4px
+                height: 4px

@@ -225,14 +225,20 @@
   .nav-page__logo {
     bottom: 21vw;
     right: 5.8vw; }
-    .nav-page__logo img {
+    .nav-page__logo > img {
       width: 11.39vw; }
     .nav-page__logo a {
       position: absolute;
-      width: 10.5vw;
+      width: 10.52vw;
       height: 5vw;
       right: 0.5vw;
       top: 0; }
+      .nav-page__logo a:hover img {
+        -webkit-filter: brightness(105%);
+                filter: brightness(105%); }
+      .nav-page__logo a img {
+        display: block;
+        width: 100%; }
   .nav-page__dk {
     bottom: 7vw;
     right: 8vw; }
@@ -319,6 +325,7 @@
     pointer-events: none; }
     .nav-page__snowman img {
       width: 16.891vw; }
+
 @-webkit-keyframes locomotive {
   from {
     left: -70vw; }
@@ -328,6 +335,7 @@
     left: -7vw; }
   to {
     left: 103vw; } }
+
 @keyframes locomotive {
   from {
     left: -70vw; }
@@ -359,5 +367,13 @@
     left: 111vw; }
   to {
     left: 111vw; } }
+@media screen and (max-width: 800px) {
+  #nav-page__snow .snow {
+    width: 6px;
+    height: 6px; } }
+@media screen and (max-width: 600px) {
+  #nav-page__snow .snow {
+    width: 4px;
+    height: 4px; } }
 
 /*# sourceMappingURL=nav-page.css.map */
