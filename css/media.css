@@ -272,7 +272,8 @@
   .header-main {
     position: relative;
     top: auto;
-    left: auto; }
+    left: auto;
+    background: #0963e9; }
     .header-main .header__wrapper {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -284,8 +285,6 @@
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-    .header-main .header__all-counter span, .header-main .header__user-counter span {
-      color: #000000; }
 
   .nav-page-bans {
     padding-bottom: 5px; }
